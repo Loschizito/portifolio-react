@@ -1,0 +1,171 @@
+.container {
+  max-width: 760px;
+  margin: 0 auto;
+}
+
+.topo {
+  display: flex;
+  align-items: center;
+  gap: 24px;
+  margin-bottom: 40px;
+}
+
+.topo h1 {
+  font-size: 32px;
+  margin-bottom: 4px;
+}
+
+.topo p {
+  font-size: 16px;
+  color: #666;
+}
+
+.topo .cargo {
+  margin-top: 4px;
+  color: #2563eb;
+  font-weight: 600;
+}
+
+.foto {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  object-fit: cover;
+  flex-shrink: 0;
+}
+
+.secao {
+  margin-bottom: 40px;
+}
+
+.secao h2 {
+  font-size: 21px;
+  margin-bottom: 12px;
+}
+
+.secao > p {
+  line-height: 1.7;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  background: #fff;
+  border: 1px solid #e5e5e5;
+  border-radius: 10px;
+  padding: 16px;
+  font-size: 15px;
+  line-height: 1.5;
+}
+
+.card + .card {
+  margin-top: 12px;
+}
+
+.muted {
+  color: #666;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+  gap: 12px;
+}
+
+.grid .card + .card {
+  margin-top: 0;
+}
+
+.filtros {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-bottom: 16px;
+}
+
+.filtros button {
+  font: inherit;
+  font-size: 14px;
+  padding: 6px 14px;
+  border: 1px solid #ccc;
+  border-radius: 999px;
+  background: #fff;
+  color: #333;
+  cursor: pointer;
+}
+
+.filtros button.ativo {
+  background: #2563eb;
+  border-color: #2563eb;
+  color: #fff;
+}
+
+.stacks,
+.tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  list-style: none;
+}
+
+.stacks li {
+  background: #fff;
+  border: 1px solid #e5e5e5;
+  border-radius: 8px;
+  padding: 8px 14px;
+  font-size: 15px;
+}
+
+.tags li {
+  background: #eef2ff;
+  color: #3730a3;
+  border-radius: 6px;
+  padding: 2px 8px;
+  font-size: 12px;
+}
+
+.certs {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 24px;
+}
+
+.certs img {
+  width: 150px;
+}
+
+.contatos {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 24px;
+}
+
+.contatos a {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  text-decoration: none;
+  color: #333;
+  font-size: 15px;
+}
+
+.contatos img {
+  width: 30px;
+  height: 30px;
+}
+
+.footer {
+  text-align: center;
+  margin-top: 48px;
+  padding: 24px 0;
+  font-size: 14px;
+  color: #666;
+}
+
+@media (max-width: 520px) {
+  .topo {
+    flex-direction: column;
+    text-align: center;
+  }
+}
